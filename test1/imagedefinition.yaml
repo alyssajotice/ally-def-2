@@ -1,7 +1,7 @@
 $schema: 1.0
 name: ally-def-test-1
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-24h2-ent-cpc
-tasks:
-    - name: choco
+userTasks:
+    - name: ~/powershell
       parameters:
-        package: notepadplusplus.install
+        script: winget install --id=Microsoft.PowerToys --accept-package-agreements --accept-source-agreements winget install --id=Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements winget install --id=Microsoft.WindowsTerminal --accept-package-agreements --accept-source-agreements winget install --id=Git.GitHubDesktop --accept-package-agreements --accept-source-agreements
